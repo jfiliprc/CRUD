@@ -30,7 +30,8 @@
             border-radius: 10px 10px 0 0;
         }
 
-        .btn-cadastrar, .btn-listar {
+        .btn-cadastrar,
+        .btn-listar {
             background-color: #28a745;
             border-color: #28a745;
             color: #fff;
@@ -39,7 +40,8 @@
             transition: background-color 0.3s ease;
         }
 
-        .btn-cadastrar:hover, .btn-listar:hover {
+        .btn-cadastrar:hover,
+        .btn-listar:hover {
             background-color: #218838;
             border-color: #1e7e34;
         }
@@ -68,6 +70,27 @@
                         <a href="listar-usuario.php" class="btn btn-listar btn-lg btn-block">Listar Usuários</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col mt-5">
+                <?php
+                include('config.php');
+                switch(@$_REQUEST['page']){
+                    case "novo":
+                        include('cadastro.php');
+                        break;
+                    case "listar":
+                        include('listar-usuario.php');
+                        break;
+                    case "salvar":
+                        include('salvar-usuario.php');
+                        break;
+                }
+                ?>
             </div>
         </div>
     </div>
