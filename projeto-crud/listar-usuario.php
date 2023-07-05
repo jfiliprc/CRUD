@@ -47,7 +47,7 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Password</th>
-                    <th>Action</th>
+                    <th>Ação</th>
                 </tr>
             </thead>
             <tbody>
