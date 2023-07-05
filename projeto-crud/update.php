@@ -80,11 +80,11 @@
                 echo "<h1>User Update</h1>";
                 echo "<form action='update-process.php' method='POST'>";
                 echo "<input type='hidden' name='id' value='" . $row['id'] . "'>";
-                echo "<label for='nome'>Name:</label>";
+                echo "<label for='nome'>Nome:</label>";
                 echo "<input type='text' name='nome' value='" . $row['nome'] . "'><br>";
                 echo "<label for='email'>Email:</label>";
                 echo "<input type='email' name='email' value='" . $row['email'] . "'><br>";
-                echo "<label for='senha'>Password:</label>";
+                echo "<label for='senha'>Senha:</label>";
                 echo "<input type='password' name='senha' value='" . $row['senha'] . "'><br>";
                 echo "<input type='submit' value='Update'>";
                 echo "</form>";
