@@ -44,9 +44,9 @@
         <table class="crud-table">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Password</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
                     <th>Ação</th>
                 </tr>
             </thead>
